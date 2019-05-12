@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScrollViewStyle"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        style="@style/LinearLayoutStyle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/superherosQuiz"
+            style="@style/HeaderStyle"
+            android:text="@string/marvel_dc_quiz" />
+
+        <ImageView
+            style="@style/ImageStyle"
+            android:contentDescription="@string/mdc_pic"
+            android:src="@drawable/united" />
+
+        <EditText
+            android:id="@+id/name_field"
+            style="@style/AnswersTextStyle"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <!--First question radio button -->
+        <TextView
+            android:id="@+id/redStreak"
+            style="@style/QuestionsTextStyle"
+            android:text="@string/question_1"
+            app:layout_constraintTop_toBottomOf="@id/superherosQuiz" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/flash"
+                style="@style/AnswersTextStyle"
+                android:focusable="auto"
+                android:text="@string/flash"
+                app:layout_constraintTop_toBottomOf="@id/redStreak" />
+
+            <RadioButton
+                android:id="@+id/superman"
+                style="@style/AnswersTextStyle"
+                android:text="@string/superman"
+                app:layout_constraintTop_toBottomOf="@id/flash" />
+
+            <RadioButton
+                android:id="@+id/ironMan"
+                style="@style/AnswersTextStyle"
+                android:text="@string/iron_man"
+                app:layout_constraintTop_toBottomOf="@id/superman" />
+
+        </RadioGroup>
+
+        <!-- second question -->
+        <TextView
+            style="@style/QuestionsTextStyle"
+            android:text="@string/question_2"
+            app:layout_constraintTop_toBottomOf="@id/ironMan" />
+
+        <EditText
+            android:id="@+id/answerBField"
+            style="@style/AnswersTextStyle"
+            android:hint="@string/type_answer"
+            android:inputType="text" />
+
+        <!--third question radio button -->
+        <TextView
+            android:id="@+id/coldQueen"
+            style="@style/QuestionsTextStyle"
+            android:text="@string/question_3"
+            app:layout_constraintTop_toBottomOf="@id/answerBField" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/killerFrost"
+                style="@style/AnswersTextStyle"
+                android:text="@string/killer_frost"
+                app:layout_constraintTop_toBottomOf="@id/coldQueen" />
+
+            <RadioButton
+                android:id="@+id/captainCold"
+                style="@style/AnswersTextStyle"
+                android:text="@string/captain_cold"
+                app:layout_constraintTop_toBottomOf="@id/killerFrost" />
+
+            <RadioButton
+                android:id="@+id/iceman"
+                style="@style/AnswersTextStyle"
+                android:text="@string/iceman"
+                app:layout_constraintTop_toBottomOf="@id/captainCold" />
+
+        </RadioGroup>
+
+        <!-- Forth question check box -->
+        <TextView
+            style="@style/QuestionsTextStyle"
+            android:text="@string/question_4"
+            app:layout_constraintTop_toBottomOf="@id/iceman" />
+
+        <CheckBox
+            android:id="@+id/loki"
+            style="@style/AnswersTextStyle"
+            android:text="@string/loki"
+            app:layout_constraintTop_toBottomOf="@id/thunder" />
+
+        <CheckBox
+            android:id="@+id/thor"
+            style="@style/AnswersTextStyle"
+            android:text="@string/thor"
+            app:layout_constraintTop_toBottomOf="@id/loki" />
+
+        <CheckBox
+            android:id="@+id/odin"
+            style="@style/AnswersTextStyle"
+            android:text="@string/odin"
+            app:layout_constraintTop_toBottomOf="@id/thor" />
+
+
+        <!-- fifth question -->
+        <TextView
+            style="@style/QuestionsTextStyle"
+            android:text="@string/question_5"
+            app:layout_constraintTop_toBottomOf="@id/odin" />
+
+        <EditText
+            android:id="@+id/answerField"
+            style="@style/AnswersTextStyle"
+            android:hint="@string/type_answer"
+            android:inputType="text" />
+
+
+        <!-- sixth question check box -->
+        <TextView
+            android:id="@+id/mutant"
+            style="@style/QuestionsTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question_6"
+            app:layout_constraintTop_toBottomOf="@id/answerField" />
+
+        <CheckBox
+            android:id="@+id/oya"
+            style="@style/AnswersTextStyle"
+            android:text="@string/oya"
+            app:layout_constraintTop_toBottomOf="@id/mutant" />
+
+        <CheckBox
+            android:id="@+id/thunder"
+            style="@style/AnswersTextStyle"
+            android:text="@string/thunder"
+            app:layout_constraintTop_toBottomOf="@id/oya" />
+
+        <CheckBox
+            android:id="@+id/storm"
+            style="@style/AnswersTextStyle"
+            android:text="@string/storm"
+            app:layout_constraintTop_toBottomOf="@id/thunder" />
+
+        <!--Reset and Check score buttons-->
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="submitAnswer"
+            android:text="@string/check_score" />
+
+        <Button
+            style="@style/ButtonStyle"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+
+    </LinearLayout>
+</ScrollView>

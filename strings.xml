@@ -1,0 +1,32 @@
+<resources>
+    <!--Question strings-->
+    <string name="app_name">QuizApp2</string>
+    <string name="question_1">1.Speedster with a red streak.</string>
+    <string name="question_2">2.It\'s a bird, its a plane, it\'s.\.\.?</string>
+    <string name="question_3">3.It doesn\'t get any colder than her.</string>
+    <string name="question_4">4.These two men are feuding brothers.</string>
+    <string name="question_5">5.Private Investigator with a mean punch.</string>
+    <string name="question_6">6.Girl power makes two powerful mutants.</string>
+    <!--!Answer Strings-->
+    <string name="flash">Flash</string>
+    <string name="superman">Superman</string>
+    <string name="iron_man">Iron Man</string>
+    <string name="killer_frost">Killer Frost</string>
+    <string name="captain_cold">Captain Cold</string>
+    <string name="iceman">Iceman</string>
+    <string name="loki">Loki</string>
+    <string name="thor">Thor</string>
+    <string name="odin">Odin</string>
+    <string name="oya">Oya</string>
+    <string name="thunder">Thunder</string>
+    <string name="storm">Storm</string>
+    <string name="check_score">Check Score</string>
+    <!--Button Strings-->
+    <string name="reset">Reset</string>
+    <string name="type_answer">Type Answer</string>
+    <!--Header String-->
+    <string name="marvel_dc_quiz">Marvel/DC Quiz</string>
+    <string name="name">Name</string>
+    <string name="mdc_pic">MDC Pic</string>
+
+</resources>
